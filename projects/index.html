@@ -4,24 +4,157 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects</title>
-    <link rel="stylesheet" href="public/style.css">
+    <link rel="stylesheet" href="/public/style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?">
+
 </head>
 <body>
     <!-- navbar -->
     <div class="">
         <ul class="flex justify-between text-gray-400 mt-10 md:mx-32 sm:mx-16 md:text-sm text-base">
             <li class="name">
-                <a class="w-[147px] h-[84.02px] text-center text-black text-[10px] font-normal font-KronaOne">bR</a>
+                <a href="/public/" class="w-[147px] h-[84.02px] text-center text-black text-[50px] font-normal font-KronaOne">bR</a>
             </li>
             <li class="flex items-center justify-end font-KronaOne">
-                <a href="" class="text-black hover:text-black md:px-4 px-2 py-2">Projects</a>
-                <a href="" class="hover:text-black md:px-4 px-2 py-2">About</a>
+                <a href="/projects/" class="text-black hover:text-black md:px-4 px-2 py-2">Projects</a>
+                <a href="/about/" class="hover:text-black md:px-4 px-2 py-2">About</a>
                 <a target="_blank" href="" class="hover:text-black md:px-4 pl-2 pr-4 py-2">CV</a>
               </li>
         </ul>
     </div>
+
+    <div class="container mx-auto flex flex-col justify-center items-center text-center pt-5 pb-5 md:pt-10">
+        <h1 class="text-[20px] p-4 font-KronaOne">Collection of my Data Science and Consulting Projects</h1>
+    </div>
+
+    <!-- Line Separator -->
+    <div class="flex justify-center mb-5">
+        <hr class="w-1/2 border-1 border-black">
+      </div>
+
+     <!-- Project Section -->
+     <div class="container mx-auto px-4 lg:px-8 pt-10 pb-20">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8">
+
+    <!-- FinViz Project EDIT!!!!-->
+    <div class="bg-white rounded-lg shadow-2xl overflow-hidden flex flex-col justify-between transform transition duration-500 hover:scale-105">
+        <img src="finviz/preview.png" alt="FinViz" class="object-cover">
+        <div class="p-4">
+          <h3 class="font-bold text-lg mb-2">FinViz - Balance Sheet Visualizer</h3>
+          <p class="text-gray-700 text-sm mb-2 italic">January 2023 - April 2023</p>
+          <p class="text-gray-700 text-base mb-4">Engineered interactive tool visualizing 10-K data using CSS, JS, and D3 library, for introductory finance class students.
+            Implemented time-series and cross-sectional analysis with filters and tooltips to allow for comparisons across firms and years.</p>
+        </div>
+        
+        <div class="p-4 flex justify-between">
+          <div class="flex flex-wrap">
+            <span class="bg-gray-200 text-gray-800 text-sm font-semibold py-1 px-2 rounded-full mr-2 mt-2">JavaScript</span>
+            <span class="bg-gray-200 text-gray-800 text-sm font-semibold py-1 px-2 rounded-full mr-2 mt-2">D3.js</span>
+            <span class="bg-gray-200 text-gray-800 text-sm font-semibold py-1 px-2 rounded-full mr-2 mt-2">CSS</span>
+          </div>
+          <div class="flex items-end text-gray-400">
+            <a href="finviz/" target="_blank" alt="Final Visualization" title="Final Visualization" class="hover:text-black ml-4">
+              <i class="fa-solid fa-play"></i>
+            </a>
+            <a href="finviz/presentation.pdf" alt="Final Presentation" title="Final Presentation" target="_blank" class="hover:text-black ml-4">
+              <i class="fa-solid fa-laptop fa-lg"></i>
+            </a>
+            <a href="finviz/report/finalreport.pdf" alt="Final Paper" target="_blank" title="Final Paper" data-tip="Paper" aria-label="Paper" class="hover:text-black ml-4">
+              <i class="fa-solid fa-file fa-lg"></i>
+            </a>
+            <a href="https://github.com/kulikj/project-finance-viz" alt="GitHub" title="GitHub" target="_blank" class="hover:text-black ml-4">
+              <i class="fa-brands fa-github fa-lg"></i>
+            </a>
+          </div>
+        </div>
+    </div>
+
+    <!-- ReceipTrack Project -->
+    <div class="bg-white rounded-lg shadow-2xl overflow-hidden flex flex-col justify-between transform transition duration-500 hover:scale-105">
+        <img src="receiptrack/preview.png" alt="RecepTrack" class="object-cover">
+        <div class="p-4">
+          <h3 class="font-bold text-lg mb-2">ReceipTrack - Receipt Image Processing</h3>
+          <p class="text-gray-700 text-sm mb-2 italic">October 2022 - December 2022</p>
+          <p class="text-gray-700 text-base mb-4">Developed dashboard web app tool in team of 4 that analyzes receipt images using OCR to produce shopping habit insights. 
+            Incorporated object-oriented design and Plotly Dash to visualize spending trends over time and across food groups.</p>
+        </div>
+            <div class="p-4 flex justify-between">
+              <div class="flex flex-wrap">
+                <span class="bg-gray-200 text-gray-800 text-sm font-semibold py-1 px-2 rounded-full mr-2 mt-2">Python</span>
+                <span class="bg-gray-200 text-gray-800 text-sm font-semibold py-1 px-2 rounded-full mr-2 mt-2">Plotly</span>
+                <span class="bg-gray-200 text-gray-800 text-sm font-semibold py-1 px-2 rounded-full mr-2 mt-2">Pytesseract</span>
+              </div>
+              <div class="flex items-end text-gray-400">
+                <a href="receiptrack/report.pdf" target="_blank" alt="Final Paper" title="Final Paper" class="hover:text-black ml-4">
+                  <i class="fa-solid fa-file fa-lg"></i>
+                </a>
+                <a href="https://github.com/kulikj/ReceipTrack" alt="GitHub" title="GitHub" target="_blank" class="hover:text-black ml-4">
+                  <i class="fa-brands fa-github fa-lg"></i>
+                </a>
+              </div>
+            </div>
+      </div>
+
+      <!-- Credit Default Project -->
+      <div class="bg-white rounded-lg shadow-2xl overflow-hidden flex flex-col justify-between transform transition duration-500 hover:scale-105">
+        <img src="credit/preview.png" alt="CreditDefaults" class="object-cover">
+        <div class="p-4">
+          <h3 class="font-bold text-lg mb-2">Supervised Learning in Credit Defaults</h3>
+          <p class="text-gray-700 text-sm mb-2 italic">February 2023 - April 2023</p>
+          <p class="text-gray-700 text-base mb-4">Created and implemented KNN, decision tree, and logistic regression algorithms using Taiwanese credit card data from 2005, resulting in an accuracy of around 68% in predicting default.
+            Utilized sklearn and keras libraries to train and evaluate a Random Forest and neural network models, resulting in accuracies above 70%.
+          </p>
+        </div>
+          <div class="p-4 flex justify-between">
+              <div class="flex flex-wrap">
+                <span class="bg-gray-200 text-gray-800 text-sm font-semibold py-1 px-2 rounded-full mr-2 mt-2">Python</span>
+                <span class="bg-gray-200 text-gray-800 text-sm font-semibold py-1 px-2 rounded-full mr-2 mt-2">Keras</span>
+                <span class="bg-gray-200 text-gray-800 text-sm font-semibold py-1 px-2 rounded-full mr-2 mt-2">Sklearn</span>
+              </div>
+              <div class="flex items-end text-gray-400">
+                <a href="credit/poster.pdf" alt="Final Poster" title="Final Poster" target="_blank" class="hover:text-black ml-4">
+                  <i class="fa-solid fa-laptop fa-lg"></i>
+                </a>
+                <a href="credit/report.pdf" target="_blank" alt="Final Paper" title="Final Paper" class="hover:text-black ml-4">
+                  <i class="fa-solid fa-file fa-lg"></i>
+                </a>
+                <a href="https://github.com/kulikj/Credit_Defaults" alt="GitHub" title="GitHub" target="_blank" class="hover:text-black ml-4">
+                  <i class="fa-brands fa-github fa-lg"></i>
+                </a>
+              </div>
+            </div>
+      </div>
+
+    <!-- Predictor Project -->
+    <div class="bg-white rounded-lg shadow-2xl overflow-hidden flex flex-col justify-between transform transition duration-500 hover:scale-105">
+        <img src="predictor/preview.png" alt="Predictor Project" class="object-cover">
+        <div class="p-4">
+          <h3 class="font-bold text-lg mb-2">Programming Language Predictor</h3>
+          <p class="text-gray-700 text-sm mb-2 italic">March 2022 - April 2022</p>
+          <p class="text-gray-700 text-base mb-4">Tokenized GitHub Repository code snippets with Regex and TF-IDF to train a Multinomial Naive Bayes Classifier.
+            Launched machine learning model on Heroku with Python framework Flask to predict programming language of user input.</p>
+        </div>
+          <div class="p-4 flex justify-between">
+              <div class="flex flex-wrap">
+                <span class="bg-gray-200 text-gray-800 text-sm font-semibold py-1 px-2 rounded-full mr-2 mt-2">Python</span>
+                <span class="bg-gray-200 text-gray-800 text-sm font-semibold py-1 px-2 rounded-full mr-2 mt-2">Sklearn</span>
+                <span class="bg-gray-200 text-gray-800 text-sm font-semibold py-1 px-2 rounded-full mr-2 mt-2">Flask</span>
+              </div>
+              <div class="flex items-end text-gray-400">
+                <a href="predictor/presentation.pdf" alt="Final Presentation" title="Final Presentation" target="_blank" class="hover:text-black ml-4">
+                  <i class="fa-solid fa-laptop fa-lg"></i>
+                </a>
+                <a href="predictor/report.pdf" target="_blank" alt="Final Paper" title="Final Paper" class="hover:text-black ml-4">
+                  <i class="fa-solid fa-file fa-lg"></i>
+                </a>
+                <a href="https://github.com/kulikj/programmingpredictor" alt="GitHub" title="GitHub" target="_blank" class="hover:text-black ml-4">
+                  <i class="fa-brands fa-github fa-lg"></i>
+                </a>
+              </div>
+            </div>
+      </div>
+
 </body>
 </html>
