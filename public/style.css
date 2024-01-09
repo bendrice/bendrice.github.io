@@ -953,6 +953,11 @@ video {
     margin-left: 4rem;
     margin-right: 4rem;
   }
+
+  .sm\:mx-12 {
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
 }
 
 @media (min-width: 768px) {
