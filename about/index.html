@@ -36,9 +36,10 @@
         <!-- magazine: side-by-side, converges into a stack as you scroll -->
         <p class="reveal font-KronaOne text-orange-500 text-xs md:text-sm tracking-[0.3em] uppercase mt-16 md:mt-24 mb-6 text-center">About</p>
 
-        <!-- two-panel: 1/5 + 4/5, constrained to the middle half of the screen -->
-        <div class="reveal mx-6 sm:mx-16 md:w-1/2 md:mx-auto mb-16 grid grid-cols-1 md:grid-cols-10 gap-6 md:gap-4">
-            <div class="md:col-span-3 md:pr-4 text-[10px] sm:text-xs space-y-4">
+        <!-- two-panel: 30/70, centered within the same frame as the rest of the site -->
+        <div class="reveal max-w-7xl mx-auto px-6 sm:px-16 md:px-32 mb-16">
+            <div class="md:max-w-3xl md:mx-auto grid grid-cols-1 md:grid-cols-10 gap-6 md:gap-4">
+            <div class="md:col-span-3 md:pr-4 text-[10px] sm:text-xs space-y-4 text-center md:text-left">
                 <div class="space-y-0.5">
                     <p class="font-medium">Benjamin Rice</p>
                     <p class="text-gray-500">Los Angeles, CA</p>
@@ -65,21 +66,25 @@
                 <p>I'm a Consultant at Resolution Economics. I studied Data Science &amp; Business at <strong class="text-black font-semibold">Northeastern University</strong> with a concentration in Marketing Management.</p>
                 <p>I <strong class="text-orange-500">LOVE</strong> architecture, jazz, EDM, computer hardware, chess, poker, learning about nearly anything, meeting new people, and especially notion (I recently had a website but found myself over engineering, which was fun, but I feel notion is the best place to consolidate everything!)</p>
             </div>
+            </div>
         </div>
 
+        <!--
+          Side-by-side photos that converge into a left-anchored stack as you scroll.
+          To add another photo later, just copy one of the <div data-mag-img> blocks
+          and drop in a new <img> — the spacing, stacking, and rotation are all
+          computed from how many photos exist, no other changes needed.
+        -->
         <div id="mag-pin-wrap" class="relative h-[220vh]">
             <div class="sticky top-0 h-screen flex items-center justify-center overflow-hidden">
                 <div class="relative w-full max-w-4xl h-[70vh] md:h-[78vh] mx-auto">
-                    <div data-mag-img data-start="-108" data-end="-108" data-rot-start="0" data-rot-end="-4"
-                         class="absolute inset-0 m-auto z-10 w-[42vw] max-w-lg max-h-full aspect-[8.5/11] rounded-lg overflow-hidden border border-gray-200 shadow-2xl bg-white will-change-transform">
+                    <div data-mag-img class="absolute inset-0 m-auto w-[30vw] sm:w-[42vw] max-w-lg max-h-full aspect-[8.5/11] rounded-lg overflow-hidden border border-gray-200 shadow-2xl bg-white will-change-transform">
                         <img src="photos/Strictly Business.jpg" alt="Newspaper cover — Strictly Business" class="w-full h-full object-cover object-top">
                     </div>
-                    <div data-mag-img data-start="0" data-end="-82" data-rot-start="0" data-rot-end="0"
-                         class="absolute inset-0 m-auto z-20 w-[42vw] max-w-lg max-h-full aspect-[8.5/11] rounded-lg overflow-hidden border border-gray-200 shadow-2xl bg-white will-change-transform">
+                    <div data-mag-img class="absolute inset-0 m-auto w-[30vw] sm:w-[42vw] max-w-lg max-h-full aspect-[8.5/11] rounded-lg overflow-hidden border border-gray-200 shadow-2xl bg-white will-change-transform">
                         <img src="photos/explore..jpg" alt="Newspaper cover — Explore" class="w-full h-full object-cover object-top">
                     </div>
-                    <div data-mag-img data-start="108" data-end="-56" data-rot-start="0" data-rot-end="3"
-                         class="absolute inset-0 m-auto z-30 w-[42vw] max-w-lg max-h-full aspect-[8.5/11] rounded-lg overflow-hidden border border-gray-200 shadow-2xl bg-white will-change-transform">
+                    <div data-mag-img class="absolute inset-0 m-auto w-[30vw] sm:w-[42vw] max-w-lg max-h-full aspect-[8.5/11] rounded-lg overflow-hidden border border-gray-200 shadow-2xl bg-white will-change-transform">
                         <img src="photos/Technology.jpg" alt="Newspaper cover — Technology" class="w-full h-full object-cover object-top">
                     </div>
                 </div>

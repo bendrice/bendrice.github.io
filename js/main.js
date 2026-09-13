@@ -42,10 +42,18 @@ if (filterButtons.length && filterCards.length) {
   });
 }
 
-// About page: side-by-side photos converge into a stack as you scroll
+// About page: side-by-side photos converge into a left-anchored stack as you scroll.
+// Positions are derived from the photo count, so adding/removing <div data-mag-img>
+// blocks in the HTML "just works" with no numbers to update here.
 const magPinWrap = document.getElementById('mag-pin-wrap');
 if (magPinWrap) {
   const magImgs = Array.from(magPinWrap.querySelectorAll('[data-mag-img]'));
+  const count = magImgs.length;
+  const SPREAD_STEP = 108; // % of a photo's own width between adjacent photos when spread out
+  const STACK_STEP = 26; // % of own width each later photo offsets from the left anchor once stacked
+  const ROTATIONS = [-4, 3, 0, -2, 2, -1]; // cycles for however many photos there are
+  const leftAnchor = -((count - 1) / 2) * SPREAD_STEP;
+
   const clamp01 = (n) => Math.max(0, Math.min(1, n));
   let ticking = false;
 
@@ -54,16 +62,13 @@ if (magPinWrap) {
     const rect = magPinWrap.getBoundingClientRect();
     const scrollable = rect.height - window.innerHeight;
     const progress = scrollable > 0 ? clamp01(-rect.top / scrollable) : 0;
-    // Below ~640px wide, the full spread would push the outer photos
-    // past the screen edge — scale the offsets down to keep them on screen.
-    const spreadScale = window.innerWidth < 640 ? 0.5 : 1;
-    magImgs.forEach((el) => {
-      const start = parseFloat(el.dataset.start) * spreadScale;
-      const end = parseFloat(el.dataset.end) * spreadScale;
-      const rotStart = parseFloat(el.dataset.rotStart);
-      const rotEnd = parseFloat(el.dataset.rotEnd);
+    magImgs.forEach((el, i) => {
+      const start = leftAnchor + i * SPREAD_STEP;
+      const end = i === 0 ? leftAnchor : leftAnchor + i * STACK_STEP;
+      const rotEnd = i === 0 ? 0 : ROTATIONS[(i - 1) % ROTATIONS.length];
       const x = start + (end - start) * progress;
-      const rot = rotStart + (rotEnd - rotStart) * progress;
+      const rot = rotEnd * progress;
+      el.style.zIndex = String(i + 1);
       el.style.transform = `translateX(${x}%) rotate(${rot}deg)`;
     });
   };
