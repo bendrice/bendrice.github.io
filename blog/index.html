@@ -1,0 +1,76 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog — Ben Rice</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?">
+</head>
+<body class="overflow-x-hidden min-h-screen flex flex-col">
+
+    <!-- navbar -->
+    <header>
+        <div class="flex justify-between items-center max-w-7xl mx-auto px-6 sm:px-16 md:px-32 mt-8 md:mt-10">
+            <a href="/index.html" class="font-KronaOne text-[36px] md:text-[42px] leading-none transition-colors hover:text-orange-500">bR</a>
+
+            <button id="nav-toggle" aria-expanded="false" aria-controls="nav-menu" class="md:hidden text-black text-2xl leading-none p-2 -m-2">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <ul id="nav-menu" class="hidden md:flex md:items-center gap-1 md:gap-2 font-KronaOne text-sm absolute md:static right-6 mt-4 md:mt-0 bg-white md:bg-transparent border md:border-0 border-gray-200 rounded-lg shadow-lg md:shadow-none p-4 md:p-0 flex-col md:flex-row z-10">
+                <li><a data-nav-link href="/projects/" class="block text-gray-400 hover:text-orange-500 transition-colors px-3 py-2">Projects</a></li>
+                <li><a data-nav-link href="/blog/" class="block text-gray-400 hover:text-orange-500 transition-colors px-3 py-2">Blog</a></li>
+                <li><a data-nav-link href="/knowledge/" class="block text-gray-400 hover:text-orange-500 transition-colors px-3 py-2">Books</a></li>
+                <li><a data-nav-link href="/cool/" class="block text-gray-400 hover:text-orange-500 transition-colors px-3 py-2">Links</a></li>
+                <li><a data-nav-link href="/about/" class="block text-gray-400 hover:text-orange-500 transition-colors px-3 py-2">About</a></li>
+                <li><a data-nav-link href="/resume/" class="block text-gray-400 hover:text-orange-500 transition-colors px-3 py-2">Resume</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="flex-1">
+        <!-- title -->
+        <section class="max-w-7xl mx-auto px-6 sm:px-16 md:px-32 pt-16 md:pt-24 pb-12">
+            <p class="reveal font-KronaOne text-orange-500 text-xs md:text-sm tracking-[0.3em] uppercase mb-4">Blog</p>
+            <h1 class="reveal font-KronaOne text-[clamp(1.75rem,4.5vw,2.75rem)] leading-tight max-w-4xl">Mostly writing to myself. You're welcome to read along.</h1>
+        </section>
+
+        <!-- post list -->
+        <section class="max-w-7xl mx-auto px-6 sm:px-16 md:px-32 pb-24">
+            <!--
+              Post template — copy this block for each new entry:
+              <li class="reveal border-b border-gray-200 py-8 flex flex-col md:flex-row md:items-baseline md:justify-between gap-2">
+                  <div>
+                      <h2 class="font-KronaOne text-lg group-hover:text-orange-500">Post title</h2>
+                      <p class="text-gray-500 mt-2 max-w-2xl">One or two line excerpt.</p>
+                  </div>
+                  <time class="text-gray-400 text-sm whitespace-nowrap">Month Year</time>
+              </li>
+            -->
+            <ul class="divide-y divide-gray-200">
+            </ul>
+
+            <div class="reveal border border-dashed border-gray-300 rounded-2xl p-12 text-center">
+                <i class="fa-solid fa-pen-nib text-orange-500 text-2xl mb-4"></i>
+                <p class="text-gray-500">Nothing posted yet — first entry coming soon.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="max-w-7xl mx-auto px-6 sm:px-16 md:px-32 py-6 border-t border-gray-200 flex flex-col md:flex-row justify-between items-center gap-3 text-xs text-gray-400 font-KronaOne">
+        <p>NO BETTER TIME THAN THE PRESENT</p>
+        <div class="flex items-center gap-4 text-base">
+            <a target="_blank" href="https://github.com/bendrice" aria-label="GitHub" class="hover:text-orange-500 transition-colors"><i class="fab fa-github"></i></a>
+            <a target="_blank" href="https://www.linkedin.com/in/benjamind-rice/" aria-label="LinkedIn" class="hover:text-orange-500 transition-colors"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="/resume/" aria-label="Resume" class="hover:text-orange-500 transition-colors"><i class="fa-solid fa-file"></i></a>
+            <a href="mailto:rice.be@northeastern.edu" aria-label="Email" class="hover:text-orange-500 transition-colors"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+    </footer>
+
+    <script src="/js/main.js"></script>
+</body>
+</html>

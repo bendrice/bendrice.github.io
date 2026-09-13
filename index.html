@@ -3,76 +3,77 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ben D. Rice</title>
+    <title>Ben Rice</title>
     <link rel="stylesheet" href="/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?">
-    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?">
 </head>
-<body>
+<body class="overflow-x-hidden min-h-screen flex flex-col">
 
     <!-- navbar -->
-    <div class="">
-        <ul class="flex justify-between text-gray-400 mt-10 md:mx-32 sm:mx-16 md:text-sm text-base">
-            <li class="name">
-                <!-- /public/ -->
-                <a href="/index.html" class="w-[149px] h-[84.02px] text-center text-black text-[50px] font-normal font-KronaOne">bR</a>
-            </li>
-            <li class="flex items-center justify-end font-KronaOne">
-                <a href="/projects/" class=" hover:text-black md:px-4 px-2 py-2">Projects</a>
-                <a href="/about/" class="hover:text-black md:px-4 px-2 py-2">About</a>
-                <a target="_blank" href="BenjaminRiceResume.pdf" class="hover:text-black md:px-4 pl-2 pr-4 py-2">CV</a>
-              </li>
-        </ul>
-    </div>
-
-    <!-- center section -->
-    <div></div>
-    <div class="container mx-auto flex flex-col justify-center items-center text-center py-10 md:pt-40 md:pb-5 font-KronaOne">
-        <div>
-            <h1 class="w-[590px] h-[140px] text-orange-400 teßxt-opacity-75 text-[60px] font-normal text-left mb-2 leading-[1.25]">Hi, my name is Ben Rice</h1>
-            <h1 class="w-[581px] h-[117px] to-black teßxt-opacity-75 text-[48px] font-normal text-left mb-2 leading-[1.25]">Data Science and Business @</h1>
-            <h1 class="w-[581px] h-[90px] text-gray-400 teßxt-opacity-75 text-[35px] font-normal text-left mb-2 leading-[1.25]">Northeastern University, Boston, MA</h1>
-            <div class="w-[581px] h-[130px] text-left">
-                <span class="text-black text-[15px] font-normal font-Krona One leading-[27px]">Previously, I was an</span>
-                <span class="text-black text-[15px] font-normal font-['Krona One'] underline leading-[27px]">Associate Consultant</span>
-                <span class="text-black text-[15px] font-normal font-['Krona One'] leading-[27px]">@ </span>
-                <span class="text-sky-500 text-[15px] font-normal font-['Krona One'] leading-[27px]">Topline Strategy<br/></span>
-                <span class="text-black text-[15px] font-normal font-['Krona One'] leading-[27px]"> | </span>
-                <span class="text-black text-[15px] font-normal font-['Krona One'] underline leading-[27px]">Private Equity Analyst Intern </span>
-                <span class="text-black text-[15px] font-normal font-['Krona One'] leading-[27px]">@ </span>
-                <span class="text-green-600 text-[15px] font-normal font-['Krona One'] leading-[27px]">BCG</span>
-                <span class="text-black text-[15px] font-normal font-['Krona One'] leading-[27px]"> |  </span>
-                <span class="text-black text-[15px] font-normal font-['Krona One'] underline leading-[27px]">Director of Consulting</span>
-                <span class="text-black text-[15px] font-normal font-['Krona One'] leading-[27px]"> & </span>
-                <span class="text-black text-[15px] font-normal font-['Krona One'] underline leading-[27px]">Project Manager</span>
-                <span class="text-black text-[15px] font-normal font-['Krona One'] leading-[27px]">@ </span>
-                <span class="text-sky-500 text-[15px] font-normal font-['Krona One'] leading-[27px]">TAMID </span>
-                <span class="text-black text-[15px] font-normal font-['Krona One'] leading-[27px]">| </span>
-                <span class="text-black text-[15px] font-normal font-['Krona One'] underline leading-[27px]">Market Research/Data Analyst Intern </span>
-                <span class="text-black text-[15px] font-normal font-['Krona One'] leading-[27px]">@ </span>
-                <span class="text-cyan-700 text-[15px] font-normal font-['Krona One'] leading-[27px]">Startup Neurofieldz. inc </span>
-            </div>
+    <header>
+        <div class="max-w-7xl mx-auto px-6 sm:px-16 md:px-32 mt-8 md:mt-10">
+            <a href="/index.html" class="font-KronaOne text-[36px] md:text-[42px] leading-none transition-colors hover:text-orange-500">bR</a>
         </div>
+    </header>
 
-        <!-- ICONS -->
-        <div class="icon-container flex items-center text-gray-500 fa-3x">
-            <a target="_blank" href="https://github.com/bendrice" alt="GitHub" class="transform transition duration-500 hover:scale-125">
-                <i class="fab fa-github hover:text-black mx-5"></i>
-            </a>
-            <a target="_blank" href="https://www.linkedin.com/in/benjamind-rice/" alt="LinkedIn" class="transform transition duration-500 hover:scale-125">
-                <i class="fa-brands fa-linkedin hover:text-black mx-5"></i>
-            </a>
-            <a target="_blank" href="BenjaminRiceResume.pdf" alt="Resume" class="transform transition duration-500 hover:scale-125">
-                <i class="fa-solid fa-file hover:text-black mx-5"></i>
-            </a>
-            <a target="_blank" href="mailto:rice.be@northeastern.edu" alt="Email" class="transform transition duration-500 hover:scale-125">
-                <i class="fa-solid fa-envelope hover:text-black mx-5"></i>
-            </a>
-          </div>
-    </div>
-    
-    
+    <main class="flex-1">
+        <!-- hero -->
+        <section class="max-w-7xl mx-auto px-6 sm:px-16 md:px-32 pt-20 md:pt-32 pb-20 md:pb-28">
+            <p class="reveal font-KronaOne text-orange-500 text-xs md:text-sm tracking-[0.3em] uppercase mb-5">Hi, I'm</p>
+            <h1 class="reveal font-KronaOne text-[clamp(2.5rem,10vw,4.5rem)] leading-[0.95] mb-4">Ben Rice<span class="text-orange-500 animate-blink">.</span></h1>
+            <p class="reveal [transition-delay:120ms] text-base md:text-lg text-gray-500 max-w-2xl">Data Science &amp; Business @ Northeastern University, Boston, MA.</p>
+        </section>
+
+        <!-- nav / explore -->
+        <section class="max-w-7xl mx-auto px-6 sm:px-16 md:px-32 pb-24 md:pb-32">
+            <ul>
+                <li class="reveal">
+                    <a href="/projects/" class="group block py-0.5">
+                        <span class="font-KronaOne text-sm md:text-lg group-hover:text-orange-500 transition-colors">Things I'm tinkering with</span>
+                    </a>
+                </li>
+                <li class="reveal [transition-delay:60ms]">
+                    <a href="/blog/" class="group block py-0.5">
+                        <span class="font-KronaOne text-sm md:text-lg group-hover:text-orange-500 transition-colors">Writing to myself</span>
+                    </a>
+                </li>
+                <li class="reveal [transition-delay:120ms]">
+                    <a href="/knowledge/" class="group block py-0.5">
+                        <span class="font-KronaOne text-sm md:text-lg group-hover:text-orange-500 transition-colors">Knowledge for all</span>
+                    </a>
+                </li>
+                <li class="reveal [transition-delay:180ms]">
+                    <a href="/cool/" class="group block py-0.5">
+                        <span class="font-KronaOne text-sm md:text-lg group-hover:text-orange-500 transition-colors">Things I find cool</span>
+                    </a>
+                </li>
+                <li class="reveal [transition-delay:240ms]">
+                    <a href="/resume/" class="group block py-0.5">
+                        <span class="font-KronaOne text-sm md:text-lg group-hover:text-orange-500 transition-colors">Resume</span>
+                    </a>
+                </li>
+                <li class="reveal [transition-delay:300ms]">
+                    <a href="/about/" class="group block py-0.5">
+                        <span class="font-KronaOne text-sm md:text-lg group-hover:text-orange-500 transition-colors">About</span>
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="max-w-7xl mx-auto px-6 sm:px-16 md:px-32 py-6 border-t border-gray-200 flex flex-col md:flex-row justify-between items-center gap-3 text-xs text-gray-400 font-KronaOne">
+        <p>NO BETTER TIME THAN THE PRESENT</p>
+        <div class="flex items-center gap-4 text-base">
+            <a target="_blank" href="https://github.com/bendrice" aria-label="GitHub" class="hover:text-orange-500 transition-colors"><i class="fab fa-github"></i></a>
+            <a target="_blank" href="https://www.linkedin.com/in/benjamind-rice/" aria-label="LinkedIn" class="hover:text-orange-500 transition-colors"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="/resume/" aria-label="Resume" class="hover:text-orange-500 transition-colors"><i class="fa-solid fa-file"></i></a>
+            <a href="mailto:rice.be@northeastern.edu" aria-label="Email" class="hover:text-orange-500 transition-colors"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+    </footer>
+
+    <script src="/js/main.js"></script>
 </body>
 </html>

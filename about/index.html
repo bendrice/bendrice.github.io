@@ -3,49 +3,100 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ben D. Rice</title>
-    <!-- CHANGE /public/styles.css -->
+    <title>About — Ben Rice</title>
     <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?">
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?">
 </head>
-<body>
+<body class="overflow-x-hidden min-h-screen flex flex-col">
+
     <!-- navbar -->
-    <div class="">
-        <ul class="flex justify-between text-gray-400 mt-10 md:mx-32 sm:mx-16 md:text-sm text-base">
-            <li class="name">
-                <a href="/index.html" class="w-[147px] h-[84.02px] text-center text-black text-[50px] font-normal font-KronaOne">bR</a>
-            </li>
-            <li class="flex items-center justify-end font-KronaOne">
-                <a href="/projects/" class="hover:text-black md:px-4 px-2 py-2">Projects</a>
-                <a href="/about/" class="text-black hover:text-black md:px-4 px-2 py-2">About</a>
-                <a target="_blank" href="/BenjaminRiceResume.pdf" class="hover:text-black md:px-4 pl-2 pr-4 py-2">CV</a>
-              </li>
-        </ul>
-    </div>
+    <header>
+        <div class="flex justify-between items-center max-w-7xl mx-auto px-6 sm:px-16 md:px-32 mt-8 md:mt-10">
+            <a href="/index.html" class="font-KronaOne text-[36px] md:text-[42px] leading-none transition-colors hover:text-orange-500">bR</a>
 
-    <div class="container mx-auto flex flex-col justify-center items-center text-center pt-5 md:pt-10">
-        <h1 class="text-[20px] p-4 font-KronaOne">Hey there!</h1>
-    </div>
+            <button id="nav-toggle" aria-expanded="false" aria-controls="nav-menu" class="md:hidden text-black text-2xl leading-none p-2 -m-2">
+                <i class="fa-solid fa-bars"></i>
+            </button>
 
-
-    <div class="flex flex-col items-center justify-center my-10">
-        <div class="w-10/12 md:w-2/4 mb-4">
-            <img src="photos/Strictly Business.jpg" alt="Image 1" class="w-full h-auto">
+            <ul id="nav-menu" class="hidden md:flex md:items-center gap-1 md:gap-2 font-KronaOne text-sm absolute md:static right-6 mt-4 md:mt-0 bg-white md:bg-transparent border md:border-0 border-gray-200 rounded-lg shadow-lg md:shadow-none p-4 md:p-0 flex-col md:flex-row z-10">
+                <li><a data-nav-link href="/projects/" class="block text-gray-400 hover:text-orange-500 transition-colors px-3 py-2">Projects</a></li>
+                <li><a data-nav-link href="/blog/" class="block text-gray-400 hover:text-orange-500 transition-colors px-3 py-2">Blog</a></li>
+                <li><a data-nav-link href="/knowledge/" class="block text-gray-400 hover:text-orange-500 transition-colors px-3 py-2">Books</a></li>
+                <li><a data-nav-link href="/cool/" class="block text-gray-400 hover:text-orange-500 transition-colors px-3 py-2">Links</a></li>
+                <li><a data-nav-link href="/about/" class="block text-gray-400 hover:text-orange-500 transition-colors px-3 py-2">About</a></li>
+                <li><a data-nav-link href="/resume/" class="block text-gray-400 hover:text-orange-500 transition-colors px-3 py-2">Resume</a></li>
+            </ul>
         </div>
-        <div class="w-10/12 md:w-2/4">
-            <img src="photos/explore..jpg" alt="Image 2" class="w-full h-auto">
-        </div>
-        <div class="w-10/12 md:w-2/4">
-            <img src="photos/Technology.jpg" alt="Image 2" class="w-full h-auto">
-        </div>
-    </div>
-    
-    
-    
-    
+    </header>
 
+    <main class="flex-1">
+        <!-- magazine: side-by-side, converges into a stack as you scroll -->
+        <p class="reveal font-KronaOne text-orange-500 text-xs md:text-sm tracking-[0.3em] uppercase mt-16 md:mt-24 mb-6 text-center">About</p>
 
+        <!-- two-panel: 1/5 + 4/5, constrained to the middle half of the screen -->
+        <div class="reveal mx-6 sm:mx-16 md:w-1/2 md:mx-auto mb-16 grid grid-cols-1 md:grid-cols-10 gap-6 md:gap-4">
+            <div class="md:col-span-3 md:pr-4 text-[10px] sm:text-xs space-y-4">
+                <div class="space-y-0.5">
+                    <p class="font-medium">Benjamin Rice</p>
+                    <p class="text-gray-500">Los Angeles, CA</p>
+                    <p class="text-gray-500">Data Science &amp; Marketing</p>
+                    <p class="text-gray-500">Northeastern University</p>
+                </div>
+
+                <div class="space-y-0.5">
+                    <p class="text-gray-500">Currently Consultant @ RE</p>
+                    <p class="text-gray-500">Former Analyst @ BCG</p>
+                </div>
+
+                <!-- X: no account yet, swap href="#" once you have one -->
+                <ul class="text-gray-500 space-y-0.5">
+                    <li><a href="https://www.linkedin.com/in/benjamind-rice/" target="_blank" class="hover:text-orange-500 transition-colors">LinkedIn</a></li>
+                    <li><a href="https://www.instagram.com/riceinla/" target="_blank" class="hover:text-orange-500 transition-colors">Instagram</a></li>
+                    <li><a href="https://github.com/bendrice" target="_blank" class="hover:text-orange-500 transition-colors">GitHub</a></li>
+                    <li><a href="#" target="_blank" class="hover:text-orange-500 transition-colors">X</a></li>
+                    <li><a href="https://www.pinterest.com/benjamindrice03/" target="_blank" class="hover:text-orange-500 transition-colors">Pinterest</a></li>
+                    <li><a href="https://open.spotify.com/user/benrice32?si=bd77e943e8e04cb2" target="_blank" class="hover:text-orange-500 transition-colors">Spotify</a></li>
+                </ul>
+            </div>
+            <div class="md:col-span-7 md:pl-2 space-y-4 text-gray-600 text-sm md:text-base leading-relaxed max-w-prose">
+                <p>I'm a Consultant at Resolution Economics. I studied Data Science &amp; Business at <strong class="text-black font-semibold">Northeastern University</strong> with a concentration in Marketing Management.</p>
+                <p>I <strong class="text-orange-500">LOVE</strong> architecture, jazz, EDM, computer hardware, chess, poker, learning about nearly anything, meeting new people, and especially notion (I recently had a website but found myself over engineering, which was fun, but I feel notion is the best place to consolidate everything!)</p>
+            </div>
+        </div>
+
+        <div id="mag-pin-wrap" class="relative h-[220vh]">
+            <div class="sticky top-0 h-screen flex items-center justify-center overflow-hidden">
+                <div class="relative w-full max-w-4xl h-[70vh] md:h-[78vh] mx-auto">
+                    <div data-mag-img data-start="-108" data-end="-108" data-rot-start="0" data-rot-end="-4"
+                         class="absolute inset-0 m-auto z-10 w-[42vw] max-w-lg max-h-full aspect-[8.5/11] rounded-lg overflow-hidden border border-gray-200 shadow-2xl bg-white will-change-transform">
+                        <img src="photos/Strictly Business.jpg" alt="Newspaper cover — Strictly Business" class="w-full h-full object-cover object-top">
+                    </div>
+                    <div data-mag-img data-start="0" data-end="-82" data-rot-start="0" data-rot-end="0"
+                         class="absolute inset-0 m-auto z-20 w-[42vw] max-w-lg max-h-full aspect-[8.5/11] rounded-lg overflow-hidden border border-gray-200 shadow-2xl bg-white will-change-transform">
+                        <img src="photos/explore..jpg" alt="Newspaper cover — Explore" class="w-full h-full object-cover object-top">
+                    </div>
+                    <div data-mag-img data-start="108" data-end="-56" data-rot-start="0" data-rot-end="3"
+                         class="absolute inset-0 m-auto z-30 w-[42vw] max-w-lg max-h-full aspect-[8.5/11] rounded-lg overflow-hidden border border-gray-200 shadow-2xl bg-white will-change-transform">
+                        <img src="photos/Technology.jpg" alt="Newspaper cover — Technology" class="w-full h-full object-cover object-top">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="max-w-7xl mx-auto px-6 sm:px-16 md:px-32 py-6 border-t border-gray-200 flex flex-col md:flex-row justify-between items-center gap-3 text-xs text-gray-400 font-KronaOne">
+        <p>NO BETTER TIME THAN THE PRESENT</p>
+        <div class="flex items-center gap-4 text-base">
+            <a target="_blank" href="https://github.com/bendrice" aria-label="GitHub" class="hover:text-orange-500 transition-colors"><i class="fab fa-github"></i></a>
+            <a target="_blank" href="https://www.linkedin.com/in/benjamind-rice/" aria-label="LinkedIn" class="hover:text-orange-500 transition-colors"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="/resume/" aria-label="Resume" class="hover:text-orange-500 transition-colors"><i class="fa-solid fa-file"></i></a>
+            <a href="mailto:rice.be@northeastern.edu" aria-label="Email" class="hover:text-orange-500 transition-colors"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+    </footer>
+
+    <script src="/js/main.js"></script>
 </body>
 </html>

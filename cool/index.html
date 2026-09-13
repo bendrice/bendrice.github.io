@@ -1,0 +1,137 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cool — Ben Rice</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?">
+</head>
+<body class="overflow-x-hidden min-h-screen flex flex-col">
+
+    <!-- navbar -->
+    <header>
+        <div class="flex justify-between items-center max-w-7xl mx-auto px-6 sm:px-16 md:px-32 mt-8 md:mt-10">
+            <a href="/index.html" class="font-KronaOne text-[36px] md:text-[42px] leading-none transition-colors hover:text-orange-500">bR</a>
+
+            <button id="nav-toggle" aria-expanded="false" aria-controls="nav-menu" class="md:hidden text-black text-2xl leading-none p-2 -m-2">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <ul id="nav-menu" class="hidden md:flex md:items-center gap-1 md:gap-2 font-KronaOne text-sm absolute md:static right-6 mt-4 md:mt-0 bg-white md:bg-transparent border md:border-0 border-gray-200 rounded-lg shadow-lg md:shadow-none p-4 md:p-0 flex-col md:flex-row z-10">
+                <li><a data-nav-link href="/projects/" class="block text-gray-400 hover:text-orange-500 transition-colors px-3 py-2">Projects</a></li>
+                <li><a data-nav-link href="/blog/" class="block text-gray-400 hover:text-orange-500 transition-colors px-3 py-2">Blog</a></li>
+                <li><a data-nav-link href="/knowledge/" class="block text-gray-400 hover:text-orange-500 transition-colors px-3 py-2">Books</a></li>
+                <li><a data-nav-link href="/cool/" class="block text-gray-400 hover:text-orange-500 transition-colors px-3 py-2">Links</a></li>
+                <li><a data-nav-link href="/about/" class="block text-gray-400 hover:text-orange-500 transition-colors px-3 py-2">About</a></li>
+                <li><a data-nav-link href="/resume/" class="block text-gray-400 hover:text-orange-500 transition-colors px-3 py-2">Resume</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="flex-1">
+        <!-- title -->
+        <section class="max-w-7xl mx-auto px-6 sm:px-16 md:px-32 pt-16 md:pt-24 pb-12">
+            <p class="reveal font-KronaOne text-orange-500 text-xs md:text-sm tracking-[0.3em] uppercase mb-4">Cool</p>
+            <h1 class="reveal font-KronaOne text-[clamp(1.75rem,4.5vw,2.75rem)] leading-tight max-w-4xl">Things I find cool. No particular theme.</h1>
+        </section>
+
+        <!-- stacked links -->
+        <section class="max-w-7xl mx-auto px-6 sm:px-16 md:px-32 pb-24">
+            <ul class="divide-y divide-gray-200">
+                <li class="reveal py-6">
+                    <a href="https://richzou.com/about" target="_blank" class="group flex items-start justify-between gap-4">
+                        <div>
+                            <h2 class="font-KronaOne text-base group-hover:text-orange-500 transition-colors">Rich Zou</h2>
+                            <p class="text-gray-500 text-sm mt-1">Personal site of a tech/VC writer on growing up in NYC's Chinatown and backing unconventional young founders.</p>
+                        </div>
+                        <i class="fa-solid fa-arrow-up-right-from-square text-gray-300 group-hover:text-orange-500 transition-colors mt-1 shrink-0"></i>
+                    </a>
+                </li>
+
+                <li class="reveal py-6">
+                    <a href="https://medium.com/design-bootcamp/changing-architecture-practice-414453563f25" target="_blank" class="group flex items-start justify-between gap-4">
+                        <div>
+                            <h2 class="font-KronaOne text-base group-hover:text-orange-500 transition-colors">Changing Architecture Practice</h2>
+                            <p class="text-gray-500 text-sm mt-1">A Medium essay on how the practice of architecture is evolving.</p>
+                        </div>
+                        <i class="fa-solid fa-arrow-up-right-from-square text-gray-300 group-hover:text-orange-500 transition-colors mt-1 shrink-0"></i>
+                    </a>
+                </li>
+
+                <li class="reveal py-6">
+                    <a href="https://www.reddit.com/r/ProductManagement/comments/171gj5x/division_of_work_between_product_manager_vs/" target="_blank" class="group flex items-start justify-between gap-4">
+                        <div>
+                            <h2 class="font-KronaOne text-base group-hover:text-orange-500 transition-colors">r/ProductManagement: Division of Work</h2>
+                            <p class="text-gray-500 text-sm mt-1">A Reddit thread comparing how work splits between the product manager role and other product roles.</p>
+                        </div>
+                        <i class="fa-solid fa-arrow-up-right-from-square text-gray-300 group-hover:text-orange-500 transition-colors mt-1 shrink-0"></i>
+                    </a>
+                </li>
+
+                <li class="reveal py-6">
+                    <a href="https://blakemasters.tumblr.com/" target="_blank" class="group flex items-start justify-between gap-4">
+                        <div>
+                            <h2 class="font-KronaOne text-base group-hover:text-orange-500 transition-colors">Blake Masters — CS183 Notes</h2>
+                            <p class="text-gray-500 text-sm mt-1">Essay notes from Peter Thiel's Stanford startup class, covering strategy, technology, and founder psychology.</p>
+                        </div>
+                        <i class="fa-solid fa-arrow-up-right-from-square text-gray-300 group-hover:text-orange-500 transition-colors mt-1 shrink-0"></i>
+                    </a>
+                </li>
+
+                <li class="reveal py-6">
+                    <a href="https://rpgadventures.io/post/comedy-theory" target="_blank" class="group flex items-start justify-between gap-4">
+                        <div>
+                            <h2 class="font-KronaOne text-base group-hover:text-orange-500 transition-colors">Comedy Theory</h2>
+                            <p class="text-gray-500 text-sm mt-1">A framework for how jokes work, built around connecting two unrelated ideas.</p>
+                        </div>
+                        <i class="fa-solid fa-arrow-up-right-from-square text-gray-300 group-hover:text-orange-500 transition-colors mt-1 shrink-0"></i>
+                    </a>
+                </li>
+
+                <li class="reveal py-6">
+                    <a href="https://www.whitefordlaw.com/news-events/employment-law-update-ai-and-wage-and-hour-claims" target="_blank" class="group flex items-start justify-between gap-4">
+                        <div>
+                            <h2 class="font-KronaOne text-base group-hover:text-orange-500 transition-colors">Employment Law Update: AI and Wage &amp; Hour Claims</h2>
+                            <p class="text-gray-500 text-sm mt-1">How employers using AI in workforce decisions can unintentionally run afoul of wage and hour law.</p>
+                        </div>
+                        <i class="fa-solid fa-arrow-up-right-from-square text-gray-300 group-hover:text-orange-500 transition-colors mt-1 shrink-0"></i>
+                    </a>
+                </li>
+
+                <li class="reveal py-6">
+                    <p class="text-gray-500 text-sm mb-3">"DO IT ANYWAY" — CaseyNeistat</p>
+                    <div class="aspect-video max-w-xl rounded-lg overflow-hidden border border-gray-200">
+                        <iframe class="w-full h-full" src="https://www.youtube.com/embed/-jCQerxzF48" title="DO IT ANYWAY — CaseyNeistat" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </li>
+
+                <li class="reveal py-6">
+                    <a href="https://poetsandquantsforundergrads.com/news/were-at-an-inflection-point-reinventing-b-school-for-the-ai-era-at-a-small-mba-program-in-a-big-east-coast-city/" target="_blank" class="group flex items-start justify-between gap-4">
+                        <div>
+                            <h2 class="font-KronaOne text-base group-hover:text-orange-500 transition-colors">Reinventing B-School for the AI Era</h2>
+                            <p class="text-gray-500 text-sm mt-1">How a small MBA program is redesigning itself for the AI era while enrollment struggles hit peer schools.</p>
+                        </div>
+                        <i class="fa-solid fa-arrow-up-right-from-square text-gray-300 group-hover:text-orange-500 transition-colors mt-1 shrink-0"></i>
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="max-w-7xl mx-auto px-6 sm:px-16 md:px-32 py-6 border-t border-gray-200 flex flex-col md:flex-row justify-between items-center gap-3 text-xs text-gray-400 font-KronaOne">
+        <p>NO BETTER TIME THAN THE PRESENT</p>
+        <div class="flex items-center gap-4 text-base">
+            <a target="_blank" href="https://github.com/bendrice" aria-label="GitHub" class="hover:text-orange-500 transition-colors"><i class="fab fa-github"></i></a>
+            <a target="_blank" href="https://www.linkedin.com/in/benjamind-rice/" aria-label="LinkedIn" class="hover:text-orange-500 transition-colors"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="/resume/" aria-label="Resume" class="hover:text-orange-500 transition-colors"><i class="fa-solid fa-file"></i></a>
+            <a href="mailto:rice.be@northeastern.edu" aria-label="Email" class="hover:text-orange-500 transition-colors"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+    </footer>
+
+    <script src="/js/main.js"></script>
+</body>
+</html>

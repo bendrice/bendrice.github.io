@@ -3,158 +3,168 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects</title>
-    <!-- /public/styles.css -->
+    <title>Projects — Ben Rice</title>
     <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?">
-
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?">
 </head>
-<body>
+<body class="overflow-x-hidden min-h-screen flex flex-col">
+
     <!-- navbar -->
-    <div class="">
-        <ul class="flex justify-between text-gray-400 mt-10 md:mx-32 sm:mx-16 md:text-sm text-base">
-            <li class="name">
-                <a href="/index.html" class="w-[147px] h-[84.02px] text-center text-black text-[50px] font-normal font-KronaOne">bR</a>
-            </li>
-            <li class="flex items-center justify-end font-KronaOne">
-                <a href="/projects/" class="text-black hover:text-black md:px-4 px-2 py-2">Projects</a>
-                <a href="/about/" class="hover:text-black md:px-4 px-2 py-2">About</a>
-                <a target="blank" href="/BenjaminRiceResume.pdf" class="hover:text-black md:px-4 pl-2 pr-4 py-2">CV</a>
-              </li>
-        </ul>
-    </div>
+    <header>
+        <div class="flex justify-between items-center max-w-7xl mx-auto px-6 sm:px-16 md:px-32 mt-8 md:mt-10">
+            <a href="/index.html" class="font-KronaOne text-[36px] md:text-[42px] leading-none transition-colors hover:text-orange-500">bR</a>
 
-    <div class="container mx-auto flex flex-col justify-center items-center text-center pt-5 pb-5 md:pt-10">
-        <h1 class="text-[20px] p-4 font-KronaOne">Collection of my Data Science and Consulting Projects</h1>
-    </div>
+            <button id="nav-toggle" aria-expanded="false" aria-controls="nav-menu" class="md:hidden text-black text-2xl leading-none p-2 -m-2">
+                <i class="fa-solid fa-bars"></i>
+            </button>
 
-    <!-- Line Separator -->
-    <div class="flex justify-center mb-5">
-        <hr class="w-1/2 border-1 border-black">
-      </div>
-
-     <!-- Project Section -->
-     <div class="container mx-auto px-4 lg:px-8 pt-10 pb-20">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8">
-
-    <!-- DS3000 Project -->
-    <div class="bg-white rounded-lg shadow-2xl overflow-hidden flex flex-col justify-between transform transition duration-500 hover:scale-105">
-        <img src="DS3000/Bannerfit.png" alt="DS3000" class="object-cover">
-        <div class="p-4">
-          <h3 class="font-bold text-lg mb-2">Time-series Forcasting - Stock Prediction</h3>
-          <p class="text-gray-700 text-sm mb-2 italic">May 2023 - June 2023</p>
-          <p class="text-gray-700 text-base mb-4">Data analysis of the performance of stocks in the healthcare, technology, and consumer retail industries from 2018-2023, as well as predicted performance for 2024. Various data analysis techniques, 
-            including ARIMA and SARIMAX time series forecasting models, were employed to assess, visualize, and forecast stock performance trends.</p>
+            <ul id="nav-menu" class="hidden md:flex md:items-center gap-1 md:gap-2 font-KronaOne text-sm absolute md:static right-6 mt-4 md:mt-0 bg-white md:bg-transparent border md:border-0 border-gray-200 rounded-lg shadow-lg md:shadow-none p-4 md:p-0 flex-col md:flex-row z-10">
+                <li><a data-nav-link href="/projects/" class="block text-gray-400 hover:text-orange-500 transition-colors px-3 py-2">Projects</a></li>
+                <li><a data-nav-link href="/blog/" class="block text-gray-400 hover:text-orange-500 transition-colors px-3 py-2">Blog</a></li>
+                <li><a data-nav-link href="/knowledge/" class="block text-gray-400 hover:text-orange-500 transition-colors px-3 py-2">Books</a></li>
+                <li><a data-nav-link href="/cool/" class="block text-gray-400 hover:text-orange-500 transition-colors px-3 py-2">Links</a></li>
+                <li><a data-nav-link href="/about/" class="block text-gray-400 hover:text-orange-500 transition-colors px-3 py-2">About</a></li>
+                <li><a data-nav-link href="/resume/" class="block text-gray-400 hover:text-orange-500 transition-colors px-3 py-2">Resume</a></li>
+            </ul>
         </div>
-        
-        <div class="p-4 flex justify-between">
-          <div class="flex flex-wrap">
-            <span class="bg-gray-200 text-gray-800 text-sm font-semibold py-1 px-2 rounded-full mr-2 mt-2">Numpy</span>
-            <span class="bg-gray-200 text-gray-800 text-sm font-semibold py-1 px-2 rounded-full mr-2 mt-2">SARIMAX</span>
-            <span class="bg-gray-200 text-gray-800 text-sm font-semibold py-1 px-2 rounded-full mr-2 mt-2">ARIMA</span>
-          </div>
-          <div class="flex items-end text-gray-400">
-            <a href="DS3000/DS3000 Project.pdf" alt="Final Paper" target="_blank" title="Final Paper" data-tip="Paper" aria-label="Paper" class="hover:text-black ml-4">
-              <i class="fa-solid fa-file fa-lg"></i>
-            </a>
-          </div>
-        </div>
-    </div>
+    </header>
 
-    <!-- DS3200 Project -->
-    <div class="bg-white rounded-lg shadow-2xl overflow-hidden flex flex-col justify-between transform transition duration-500 hover:scale-105">
-        <img src="DS3200/BANNER" alt="RecepTrack" class="object-cover">
-        <div class="p-4">
-          <h3 class="font-bold text-lg mb-2">PrivateEye - Private Capital Deal Sourcing</h3>
-          <p class="text-gray-700 text-sm mb-2 italic">January 2023 - April 2023</p>
-          <p class="text-gray-700 text-base mb-4">Developed an application using SQL and Flask that acts as a deal sourcing platform aiming to automate the process of private companies looking for investments and financial buyers looking to invest.
-             Utilized REST API for routing the different personas, used Docker container, and app-smith as reactive frontend connected to database.</p>
+    <main class="flex-1">
+        <!-- title -->
+        <section class="max-w-7xl mx-auto px-6 sm:px-16 md:px-32 pt-16 md:pt-24 pb-12">
+            <p class="reveal font-KronaOne text-orange-500 text-xs md:text-sm tracking-[0.3em] uppercase mb-4">Projects</p>
+            <h1 class="reveal font-KronaOne text-[clamp(1.75rem,4.5vw,2.75rem)] leading-tight max-w-4xl">Things I'm currently tinkering with, and a few I've shipped.</h1>
+        </section>
+
+        <!-- filter -->
+        <div class="reveal max-w-7xl mx-auto px-6 sm:px-16 md:px-32 flex flex-wrap gap-2 mb-10">
+            <button data-filter="all" class="filter-btn is-active">All</button>
+            <button data-filter="school" class="filter-btn">School</button>
+            <button data-filter="personal" class="filter-btn">Personal</button>
+            <button data-filter="professional" class="filter-btn">Professional</button>
         </div>
-            <div class="p-4 flex justify-between">
-              <div class="flex flex-wrap">
-                <span class="bg-gray-200 text-gray-800 text-sm font-semibold py-1 px-2 rounded-full mr-2 mt-2">SQL</span>
-                <span class="bg-gray-200 text-gray-800 text-sm font-semibold py-1 px-2 rounded-full mr-2 mt-2">Flask</span>
-                <span class="bg-gray-200 text-gray-800 text-sm font-semibold py-1 px-2 rounded-full mr-2 mt-2">Docker</span>
-                <span class="bg-gray-200 text-gray-800 text-sm font-semibold py-1 px-2 rounded-full mr-2 mt-2">Appsmith</span>
-              </div>
-              <div class="flex items-end text-gray-400">
-                <a href="https://github.com/bendrice/PrivateEye" alt="GitHub" title="GitHub" target="_blank" class="hover:text-black ml-4">
-                  <i class="fa-brands fa-github fa-lg"></i>
-                </a>
-                <a href="https://www.youtube.com/watch?v=4kHaZN8YpzM" target="_blank" alt="Final Visualization" title="Final Visualization" class="hover:text-black ml-4">
-                  <i class="fa-solid fa-play"></i>
-                </a>
-              </div>
+
+        <!-- grid -->
+        <section class="max-w-7xl mx-auto px-6 sm:px-16 md:px-32 pb-24 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+
+            <!-- DS3000 Project -->
+            <div data-category="school" class="reveal border border-gray-200 rounded-2xl overflow-hidden flex flex-col justify-between hover:border-orange-500 transition-colors">
+                <img src="DS3000/Bannerfit.png" alt="DS3000" class="object-cover w-full">
+                <div class="p-5">
+                    <h3 class="font-KronaOne text-base mb-2">Time-series Forecasting — Stock Prediction</h3>
+                    <p class="text-gray-400 text-sm mb-2 italic">May 2023 – June 2023</p>
+                    <p class="text-gray-600 text-sm mb-4">Data analysis of the performance of stocks in the healthcare, technology, and consumer retail industries from 2018-2023, as well as predicted performance for 2024. Various data analysis techniques, including ARIMA and SARIMAX time series forecasting models, were employed to assess, visualize, and forecast stock performance trends.</p>
+                </div>
+                <div class="p-5 pt-0 flex justify-between items-end">
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-gray-100 text-gray-700 text-xs font-semibold py-1 px-2 rounded-full">Numpy</span>
+                        <span class="bg-gray-100 text-gray-700 text-xs font-semibold py-1 px-2 rounded-full">SARIMAX</span>
+                        <span class="bg-gray-100 text-gray-700 text-xs font-semibold py-1 px-2 rounded-full">ARIMA</span>
+                    </div>
+                    <a href="DS3000/DS3000 Project.pdf" target="_blank" title="Final Paper" aria-label="Paper" class="text-gray-400 hover:text-orange-500 transition-colors">
+                        <i class="fa-solid fa-file fa-lg"></i>
+                    </a>
+                </div>
             </div>
-      </div>
 
-      <!-- TAMID Consulting -->
-      <div class="bg-white rounded-lg shadow-2xl overflow-hidden flex flex-col justify-between transform transition duration-500 hover:scale-105">
-        <img src="Nuhom/BANNER" alt="CreditDefaults" class="object-cover">
-        <div class="p-4">
-          <h3 class="font-bold text-lg mb-2">Real Estate Marketing Strategy</h3>
-          <p class="text-gray-700 text-sm mb-2 italic">February 2022 - June 2022</p>
-          <p class="text-gray-700 text-base mb-4">Leveraged advanced consulting skills to provide pro-bono services for a Cambridge real estate startup. Led a student team in delivering a strategic marketing growth plan to the CEO. Orchestrated feature roadmap development, 
-            influencing cross-functional teams for seamless project execution and stakeholder alignment.</p>
-        </div>
-          <div class="p-4 flex justify-between">
-              <div class="flex flex-wrap">
-                <span class="bg-gray-200 text-gray-800 text-sm font-semibold py-1 px-2 rounded-full mr-2 mt-2">Market Research</span>
-                <span class="bg-gray-200 text-gray-800 text-sm font-semibold py-1 px-2 rounded-full mr-2 mt-2">SEO</span>
-              </div>
-              <div class="flex items-end text-gray-400">
-                <a href="Nuhom/Nuhom Deliverable FINAL.pdf" target="_blank" alt="Final Paper" title="Final Paper" class="hover:text-black ml-4">
-                  <i class="fa-solid fa-file fa-lg"></i>
-                </a>
-              </div>
+            <!-- DS3200 Project -->
+            <div data-category="school" class="reveal [transition-delay:60ms] border border-gray-200 rounded-2xl overflow-hidden flex flex-col justify-between hover:border-orange-500 transition-colors">
+                <img src="DS3200/BANNER" alt="RecepTrack" class="object-cover w-full">
+                <div class="p-5">
+                    <h3 class="font-KronaOne text-base mb-2">PrivateEye — Private Capital Deal Sourcing</h3>
+                    <p class="text-gray-400 text-sm mb-2 italic">January 2023 – April 2023</p>
+                    <p class="text-gray-600 text-sm mb-4">Developed an application using SQL and Flask that acts as a deal sourcing platform aiming to automate the process of private companies looking for investments and financial buyers looking to invest. Utilized REST API for routing the different personas, used Docker container, and app-smith as reactive frontend connected to database.</p>
+                </div>
+                <div class="p-5 pt-0 flex justify-between items-end">
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-gray-100 text-gray-700 text-xs font-semibold py-1 px-2 rounded-full">SQL</span>
+                        <span class="bg-gray-100 text-gray-700 text-xs font-semibold py-1 px-2 rounded-full">Flask</span>
+                        <span class="bg-gray-100 text-gray-700 text-xs font-semibold py-1 px-2 rounded-full">Docker</span>
+                        <span class="bg-gray-100 text-gray-700 text-xs font-semibold py-1 px-2 rounded-full">Appsmith</span>
+                    </div>
+                    <div class="flex items-end text-gray-400 gap-3">
+                        <a href="https://github.com/bendrice/PrivateEye" target="_blank" title="GitHub" class="hover:text-orange-500 transition-colors">
+                            <i class="fa-brands fa-github fa-lg"></i>
+                        </a>
+                        <a href="https://www.youtube.com/watch?v=4kHaZN8YpzM" target="_blank" title="Final Visualization" class="hover:text-orange-500 transition-colors">
+                            <i class="fa-solid fa-play"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
-      </div>
 
-    <!-- Netwrk Project -->
-    <div class="bg-white rounded-lg shadow-2xl overflow-hidden flex flex-col justify-between transform transition duration-500 hover:scale-105">
-        <img src="Netwrk/BANNER.png" alt="Predictor Project" class="object-cover">
-        <div class="p-4">
-          <h3 class="font-bold text-lg mb-2">Networking Platform For Students</h3>
-          <p class="text-gray-700 text-sm mb-2 italic">July 2023 - Current</p>
-          <p class="text-gray-700 text-base mb-4">Solve problem of Inadequate, fragmented, and generic networking resources for Northeastern University students by creating a specialized, 
-            user-friendly platform that connects them with relevant peers who can provide insights and support for their academic and professional journeys by coffee chats or just through the interface.
-             No extra fluff. Just experience and networking. </p>
-        </div>
-          <div class="p-4 flex justify-between">
-              <div class="flex flex-wrap">
-                <span class="bg-gray-200 text-gray-800 text-sm font-semibold py-1 px-2 rounded-full mr-2 mt-2">Figma</span>
-                <span class="bg-gray-200 text-gray-800 text-sm font-semibold py-1 px-2 rounded-full mr-2 mt-2">Node.js</span>
-                <span class="bg-gray-200 text-gray-800 text-sm font-semibold py-1 px-2 rounded-full mr-2 mt-2">Product Management</span>
-              </div>
+            <!-- TAMID Consulting -->
+            <div data-category="school" class="reveal [transition-delay:120ms] border border-gray-200 rounded-2xl overflow-hidden flex flex-col justify-between hover:border-orange-500 transition-colors">
+                <img src="Nuhom/BANNER" alt="CreditDefaults" class="object-cover w-full">
+                <div class="p-5">
+                    <h3 class="font-KronaOne text-base mb-2">Real Estate Marketing Strategy</h3>
+                    <p class="text-gray-400 text-sm mb-2 italic">February 2022 – June 2022</p>
+                    <p class="text-gray-600 text-sm mb-4">Leveraged advanced consulting skills to provide pro-bono services for a Cambridge real estate startup. Led a student team in delivering a strategic marketing growth plan to the CEO. Orchestrated feature roadmap development, influencing cross-functional teams for seamless project execution and stakeholder alignment.</p>
+                </div>
+                <div class="p-5 pt-0 flex justify-between items-end">
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-gray-100 text-gray-700 text-xs font-semibold py-1 px-2 rounded-full">Market Research</span>
+                        <span class="bg-gray-100 text-gray-700 text-xs font-semibold py-1 px-2 rounded-full">SEO</span>
+                    </div>
+                    <a href="Nuhom/Nuhom Deliverable FINAL.pdf" target="_blank" title="Final Paper" class="text-gray-400 hover:text-orange-500 transition-colors">
+                        <i class="fa-solid fa-file fa-lg"></i>
+                    </a>
+                </div>
             </div>
-      </div>
 
-      <!--DS4200 Project Bunker Hill-->
-      <div class="bg-white rounded-lg shadow-2xl overflow-hidden flex flex-col justify-between transform transition duration-500 hover:scale-105">
-        <img src="DS4200Proj/battleofbunker.jpg" alt="Predictor Project" class="object-cover">
-        <div class="p-4">
-          <h3 class="font-bold text-lg mb-2">Charlestown 1775 Census Overview</h3>
-          <p class="text-gray-700 text-sm mb-2 italic">May 2024 - July 2024</p>
-          <p class="text-gray-700 text-base mb-4"> Examining the data on family structures, individual residents, and enslaved people, 
-            we aim to uncover significant historical sites that tell unique stories. 
-            This analysis is intended to support further in-depth study of the demographic makeup of 
-            Charlestown in 1775 and assist the archaeological teams in identifying potential excavation sites.</p>
-        </div>
-          <div class="p-4 flex justify-between">
-              <div class="flex flex-wrap">
-                <span class="bg-gray-200 text-gray-800 text-sm font-semibold py-1 px-2 rounded-full mr-2 mt-2">Matpotlib</span>
-                <span class="bg-gray-200 text-gray-800 text-sm font-semibold py-1 px-2 rounded-full mr-2 mt-2">JavaScript</span>
-                <span class="bg-gray-200 text-gray-800 text-sm font-semibold py-1 px-2 rounded-full mr-2 mt-2">Tableau</span>
-              </div>
-              <div class="flex items-end text-gray-400">
-                <a href="DS4200Proj/DS4200 Data Report Final.pdf" target="_blank" alt="Final Paper" title="Final Paper" class="hover:text-black ml-4">
-                  <i class="fa-solid fa-file fa-lg"></i>
-                </a>
-              </div>
+            <!-- Netwrk Project -->
+            <div data-category="personal" class="reveal [transition-delay:180ms] border border-gray-200 rounded-2xl overflow-hidden flex flex-col justify-between hover:border-orange-500 transition-colors">
+                <img src="Netwrk/BANNER.png" alt="Netwrk" class="object-cover w-full">
+                <div class="p-5">
+                    <h3 class="font-KronaOne text-base mb-2">Networking Platform For Students</h3>
+                    <p class="text-gray-400 text-sm mb-2 italic">July 2023 – Current</p>
+                    <p class="text-gray-600 text-sm mb-4">Solve the problem of inadequate, fragmented, and generic networking resources for Northeastern University students by creating a specialized, user-friendly platform that connects them with relevant peers who can provide insights and support for their academic and professional journeys — by coffee chats or just through the interface. No extra fluff. Just experience and networking.</p>
+                </div>
+                <div class="p-5 pt-0 flex justify-between items-end">
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-gray-100 text-gray-700 text-xs font-semibold py-1 px-2 rounded-full">Figma</span>
+                        <span class="bg-gray-100 text-gray-700 text-xs font-semibold py-1 px-2 rounded-full">Node.js</span>
+                        <span class="bg-gray-100 text-gray-700 text-xs font-semibold py-1 px-2 rounded-full">Product Management</span>
+                    </div>
+                </div>
             </div>
-      </div>
 
+            <!-- DS4200 Project — Bunker Hill -->
+            <div data-category="school" class="reveal [transition-delay:240ms] border border-gray-200 rounded-2xl overflow-hidden flex flex-col justify-between hover:border-orange-500 transition-colors">
+                <img src="DS4200Proj/battleofbunker.jpg" alt="Charlestown 1775 Census" class="object-cover w-full">
+                <div class="p-5">
+                    <h3 class="font-KronaOne text-base mb-2">Charlestown 1775 Census Overview</h3>
+                    <p class="text-gray-400 text-sm mb-2 italic">May 2024 – July 2024</p>
+                    <p class="text-gray-600 text-sm mb-4">Examining data on family structures, individual residents, and enslaved people to uncover significant historical sites that tell unique stories. This analysis is intended to support further in-depth study of the demographic makeup of Charlestown in 1775 and assist archaeological teams in identifying potential excavation sites.</p>
+                </div>
+                <div class="p-5 pt-0 flex justify-between items-end">
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-gray-100 text-gray-700 text-xs font-semibold py-1 px-2 rounded-full">Matplotlib</span>
+                        <span class="bg-gray-100 text-gray-700 text-xs font-semibold py-1 px-2 rounded-full">JavaScript</span>
+                        <span class="bg-gray-100 text-gray-700 text-xs font-semibold py-1 px-2 rounded-full">Tableau</span>
+                    </div>
+                    <a href="DS4200Proj/DS4200 Data Report Final.pdf" target="_blank" title="Final Paper" class="text-gray-400 hover:text-orange-500 transition-colors">
+                        <i class="fa-solid fa-file fa-lg"></i>
+                    </a>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="max-w-7xl mx-auto px-6 sm:px-16 md:px-32 py-6 border-t border-gray-200 flex flex-col md:flex-row justify-between items-center gap-3 text-xs text-gray-400 font-KronaOne">
+        <p>NO BETTER TIME THAN THE PRESENT</p>
+        <div class="flex items-center gap-4 text-base">
+            <a target="_blank" href="https://github.com/bendrice" aria-label="GitHub" class="hover:text-orange-500 transition-colors"><i class="fab fa-github"></i></a>
+            <a target="_blank" href="https://www.linkedin.com/in/benjamind-rice/" aria-label="LinkedIn" class="hover:text-orange-500 transition-colors"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="/resume/" aria-label="Resume" class="hover:text-orange-500 transition-colors"><i class="fa-solid fa-file"></i></a>
+            <a href="mailto:rice.be@northeastern.edu" aria-label="Email" class="hover:text-orange-500 transition-colors"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+    </footer>
+
+    <script src="/js/main.js"></script>
 </body>
 </html>
