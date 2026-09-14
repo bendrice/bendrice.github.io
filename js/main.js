@@ -42,17 +42,17 @@ if (filterButtons.length && filterCards.length) {
   });
 }
 
-// About page: side-by-side photos converge into a left-anchored stack as you scroll.
-// Positions are derived from the photo count, so adding/removing <div data-mag-img>
-// blocks in the HTML "just works" with no numbers to update here.
+// About page: the first (leftmost) photo stays put. The rest start lined up
+// beside it like a row of cards, then slide left and overlap it as you scroll,
+// converging into a stack. Positions are derived from the photo count, so
+// adding/removing <div data-mag-img> blocks in the HTML "just works" with no
+// numbers to update here.
 const magPinWrap = document.getElementById('mag-pin-wrap');
 if (magPinWrap) {
   const magImgs = Array.from(magPinWrap.querySelectorAll('[data-mag-img]'));
-  const count = magImgs.length;
-  const SPREAD_STEP = 108; // % of a photo's own width between adjacent photos when spread out
-  const STACK_STEP = 26; // % of own width each later photo offsets from the left anchor once stacked
+  const SPREAD_STEP = 106; // % of a photo's own width between adjacent photos when laid out in a row
+  const STACK_STEP = 26; // % of own width each later photo offsets once stacked
   const ROTATIONS = [-4, 3, 0, -2, 2, -1]; // cycles for however many photos there are
-  const leftAnchor = -((count - 1) / 2) * SPREAD_STEP;
 
   const clamp01 = (n) => Math.max(0, Math.min(1, n));
   let ticking = false;
@@ -63,8 +63,8 @@ if (magPinWrap) {
     const scrollable = rect.height - window.innerHeight;
     const progress = scrollable > 0 ? clamp01(-rect.top / scrollable) : 0;
     magImgs.forEach((el, i) => {
-      const start = leftAnchor + i * SPREAD_STEP;
-      const end = i === 0 ? leftAnchor : leftAnchor + i * STACK_STEP;
+      const start = i * SPREAD_STEP;
+      const end = i * STACK_STEP;
       const rotEnd = i === 0 ? 0 : ROTATIONS[(i - 1) % ROTATIONS.length];
       const x = start + (end - start) * progress;
       const rot = rotEnd * progress;

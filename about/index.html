@@ -8,13 +8,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Krona+One&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 </head>
 <body class="overflow-x-hidden min-h-screen flex flex-col">
 
     <!-- navbar -->
     <header>
-        <div class="flex justify-between items-center max-w-7xl mx-auto px-6 sm:px-16 md:px-32 mt-8 md:mt-10">
+        <div class="flex justify-between items-center px-6 sm:px-10 md:px-14 mt-8 md:mt-10">
             <a href="/index.html" class="font-KronaOne text-[36px] md:text-[42px] leading-none transition-colors hover:text-orange-500">bR</a>
 
             <button id="nav-toggle" aria-expanded="false" aria-controls="nav-menu" class="md:hidden text-black text-2xl leading-none p-2 -m-2">
@@ -37,7 +40,7 @@
         <p class="reveal font-KronaOne text-orange-500 text-xs md:text-sm tracking-[0.3em] uppercase mt-16 md:mt-24 mb-6 text-center">About</p>
 
         <!-- two-panel: 30/70, centered within the same frame as the rest of the site -->
-        <div class="reveal max-w-7xl mx-auto px-6 sm:px-16 md:px-32 mb-16">
+        <div class="reveal max-w-7xl mx-auto px-6 sm:px-16 md:px-32 mb-2">
             <div class="md:max-w-3xl md:mx-auto grid grid-cols-1 md:grid-cols-10 gap-6 md:gap-4">
             <div class="md:col-span-3 md:pr-4 text-[10px] sm:text-xs space-y-4 text-center md:text-left">
                 <div class="space-y-0.5">
@@ -70,21 +73,23 @@
         </div>
 
         <!--
-          Side-by-side photos that converge into a left-anchored stack as you scroll.
-          To add another photo later, just copy one of the <div data-mag-img> blocks
-          and drop in a new <img> — the spacing, stacking, and rotation are all
-          computed from how many photos exist, no other changes needed.
+          The leftmost photo stays put; the rest start lined up beside it like a
+          row of cards, then slide left and overlap it as you scroll, converging
+          into a stack. To add another photo later, just copy one of the
+          <div data-mag-img> blocks and drop in a new <img> — the spacing,
+          stacking, and rotation are all computed from how many photos exist,
+          no other changes needed.
         -->
         <div id="mag-pin-wrap" class="relative h-[220vh]">
-            <div class="sticky top-0 h-screen flex items-center justify-center overflow-hidden">
-                <div class="relative w-full max-w-4xl h-[70vh] md:h-[78vh] mx-auto">
-                    <div data-mag-img class="absolute inset-0 m-auto w-[30vw] sm:w-[42vw] max-w-lg max-h-full aspect-[8.5/11] rounded-lg overflow-hidden border border-gray-200 shadow-2xl bg-white will-change-transform">
+            <div class="sticky top-0 h-screen flex items-start justify-start overflow-hidden pt-0 md:pt-1 px-6 sm:px-10 md:px-14">
+                <div class="relative w-full max-w-5xl h-[82vh] md:h-[86vh]">
+                    <div data-mag-img class="absolute inset-y-0 left-0 my-auto w-[min(85vw,74vh)] sm:w-[min(55vw,76vh)] md:w-[min(50vw,78vh)] max-w-3xl max-h-full aspect-[8.5/11] rounded-lg overflow-hidden border border-gray-200 shadow-2xl bg-white will-change-transform">
                         <img src="photos/Strictly Business.jpg" alt="Newspaper cover — Strictly Business" class="w-full h-full object-cover object-top">
                     </div>
-                    <div data-mag-img class="absolute inset-0 m-auto w-[30vw] sm:w-[42vw] max-w-lg max-h-full aspect-[8.5/11] rounded-lg overflow-hidden border border-gray-200 shadow-2xl bg-white will-change-transform">
+                    <div data-mag-img class="absolute inset-y-0 left-0 my-auto w-[min(85vw,74vh)] sm:w-[min(55vw,76vh)] md:w-[min(50vw,78vh)] max-w-3xl max-h-full aspect-[8.5/11] rounded-lg overflow-hidden border border-gray-200 shadow-2xl bg-white will-change-transform">
                         <img src="photos/explore..jpg" alt="Newspaper cover — Explore" class="w-full h-full object-cover object-top">
                     </div>
-                    <div data-mag-img class="absolute inset-0 m-auto w-[30vw] sm:w-[42vw] max-w-lg max-h-full aspect-[8.5/11] rounded-lg overflow-hidden border border-gray-200 shadow-2xl bg-white will-change-transform">
+                    <div data-mag-img class="absolute inset-y-0 left-0 my-auto w-[min(85vw,74vh)] sm:w-[min(55vw,76vh)] md:w-[min(50vw,78vh)] max-w-3xl max-h-full aspect-[8.5/11] rounded-lg overflow-hidden border border-gray-200 shadow-2xl bg-white will-change-transform">
                         <img src="photos/Technology.jpg" alt="Newspaper cover — Technology" class="w-full h-full object-cover object-top">
                     </div>
                 </div>
@@ -92,8 +97,8 @@
         </div>
     </main>
 
-    <footer class="max-w-7xl mx-auto px-6 sm:px-16 md:px-32 py-6 border-t border-gray-200 flex flex-col md:flex-row justify-between items-center gap-3 text-xs text-gray-400 font-KronaOne">
-        <p>NO BETTER TIME THAN THE PRESENT</p>
+    <footer class="px-6 sm:px-10 md:px-14 py-6 border-t border-gray-200 flex flex-col md:flex-row justify-between items-center gap-3 text-xs text-gray-400 font-KronaOne">
+        <p>bR 2026 - All rights reserved</p>
         <div class="flex items-center gap-4 text-base">
             <a target="_blank" href="https://github.com/bendrice" aria-label="GitHub" class="hover:text-orange-500 transition-colors"><i class="fab fa-github"></i></a>
             <a target="_blank" href="https://www.linkedin.com/in/benjamind-rice/" aria-label="LinkedIn" class="hover:text-orange-500 transition-colors"><i class="fa-brands fa-linkedin"></i></a>

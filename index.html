@@ -8,64 +8,71 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Krona+One&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 </head>
 <body class="overflow-x-hidden min-h-screen flex flex-col">
 
     <!-- navbar -->
     <header>
-        <div class="max-w-7xl mx-auto px-6 sm:px-16 md:px-32 mt-8 md:mt-10">
+        <div class="px-6 sm:px-10 md:px-14 mt-8 md:mt-10">
             <a href="/index.html" class="font-KronaOne text-[36px] md:text-[42px] leading-none transition-colors hover:text-orange-500">bR</a>
         </div>
     </header>
 
-    <main class="flex-1">
+    <main class="flex-1 flex flex-col">
         <!-- hero -->
-        <section class="max-w-7xl mx-auto px-6 sm:px-16 md:px-32 pt-20 md:pt-32 pb-20 md:pb-28">
-            <p class="reveal font-KronaOne text-orange-500 text-xs md:text-sm tracking-[0.3em] uppercase mb-5">Hi, I'm</p>
-            <h1 class="reveal font-KronaOne text-[clamp(2.5rem,10vw,4.5rem)] leading-[0.95] mb-4">Ben Rice<span class="text-orange-500 animate-blink">.</span></h1>
-            <p class="reveal [transition-delay:120ms] text-base md:text-lg text-gray-500 max-w-2xl">Data Science &amp; Business @ Northeastern University, Boston, MA.</p>
+        <section class="min-w-0 max-w-7xl mx-auto px-6 sm:px-16 md:px-32 pt-16 md:pt-20 pb-12 md:pb-16">
+            <div class="text-center">
+                <p class="reveal font-KronaOne text-orange-500 text-xs md:text-sm tracking-[0.3em] uppercase mb-5">Hi, I'm</p>
+                <h1 class="reveal font-KronaOne text-[clamp(2.75rem,11vw,9rem)] leading-[0.95]">Ben Rice<span class="text-orange-500 animate-blink">.</span></h1>
+            </div>
         </section>
 
         <!-- nav / explore -->
-        <section class="max-w-7xl mx-auto px-6 sm:px-16 md:px-32 pb-24 md:pb-32">
-            <ul>
-                <li class="reveal">
-                    <a href="/projects/" class="group block py-0.5">
-                        <span class="font-KronaOne text-sm md:text-lg group-hover:text-orange-500 transition-colors">Things I'm tinkering with</span>
-                    </a>
-                </li>
-                <li class="reveal [transition-delay:60ms]">
-                    <a href="/blog/" class="group block py-0.5">
-                        <span class="font-KronaOne text-sm md:text-lg group-hover:text-orange-500 transition-colors">Writing to myself</span>
-                    </a>
-                </li>
-                <li class="reveal [transition-delay:120ms]">
-                    <a href="/knowledge/" class="group block py-0.5">
-                        <span class="font-KronaOne text-sm md:text-lg group-hover:text-orange-500 transition-colors">Knowledge for all</span>
-                    </a>
-                </li>
-                <li class="reveal [transition-delay:180ms]">
-                    <a href="/cool/" class="group block py-0.5">
-                        <span class="font-KronaOne text-sm md:text-lg group-hover:text-orange-500 transition-colors">Things I find cool</span>
-                    </a>
-                </li>
-                <li class="reveal [transition-delay:240ms]">
-                    <a href="/resume/" class="group block py-0.5">
-                        <span class="font-KronaOne text-sm md:text-lg group-hover:text-orange-500 transition-colors">Resume</span>
-                    </a>
-                </li>
-                <li class="reveal [transition-delay:300ms]">
-                    <a href="/about/" class="group block py-0.5">
-                        <span class="font-KronaOne text-sm md:text-lg group-hover:text-orange-500 transition-colors">About</span>
-                    </a>
-                </li>
-            </ul>
+        <section class="relative min-w-0 flex-1 min-h-[320px] overflow-hidden">
+            <img src="/public/frontpagept2.png" alt="" class="absolute inset-y-0 left-2 right-2 sm:left-3 sm:right-3 md:left-4 md:right-4 h-full w-[calc(100%-1rem)] sm:w-[calc(100%-1.5rem)] md:w-[calc(100%-2rem)] object-cover object-[center_70%]" />
+            <div class="absolute inset-0 flex items-center justify-center px-6">
+                <ul class="-translate-y-10 md:-translate-y-14 bg-black/35 backdrop-blur-lg border border-white/15 rounded-3xl shadow-2xl px-8 py-6 sm:px-14 sm:py-8 text-center">
+                    <li class="reveal">
+                        <a href="/projects/" class="group block py-1 leading-tight">
+                            <span class="font-normal text-white text-xs md:text-sm group-hover:text-orange-400 transition-colors">Things I'm tinkering with</span>
+                        </a>
+                    </li>
+                    <li class="reveal [transition-delay:60ms]">
+                        <a href="/blog/" class="group block py-1 leading-tight">
+                            <span class="font-normal text-white text-xs md:text-sm group-hover:text-orange-400 transition-colors">Writing to myself</span>
+                        </a>
+                    </li>
+                    <li class="reveal [transition-delay:120ms]">
+                        <a href="/knowledge/" class="group block py-1 leading-tight">
+                            <span class="font-normal text-white text-xs md:text-sm group-hover:text-orange-400 transition-colors">Knowledge for all</span>
+                        </a>
+                    </li>
+                    <li class="reveal [transition-delay:180ms]">
+                        <a href="/cool/" class="group block py-1 leading-tight">
+                            <span class="font-normal text-white text-xs md:text-sm group-hover:text-orange-400 transition-colors">Things I find cool</span>
+                        </a>
+                    </li>
+                    <li class="reveal [transition-delay:240ms]">
+                        <a href="/resume/" class="group block py-1 leading-tight">
+                            <span class="font-normal text-white text-xs md:text-sm group-hover:text-orange-400 transition-colors">Resume</span>
+                        </a>
+                    </li>
+                    <li class="reveal [transition-delay:300ms]">
+                        <a href="/about/" class="group block py-1 leading-tight">
+                            <span class="font-normal text-white text-xs md:text-sm group-hover:text-orange-400 transition-colors">About</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </section>
     </main>
 
-    <footer class="max-w-7xl mx-auto px-6 sm:px-16 md:px-32 py-6 border-t border-gray-200 flex flex-col md:flex-row justify-between items-center gap-3 text-xs text-gray-400 font-KronaOne">
-        <p>NO BETTER TIME THAN THE PRESENT</p>
+    <footer class="px-6 sm:px-10 md:px-14 py-6 border-t border-gray-200 flex flex-col md:flex-row justify-between items-center gap-3 text-xs text-gray-400 font-KronaOne">
+        <p>bR 2026 - All rights reserved</p>
         <div class="flex items-center gap-4 text-base">
             <a target="_blank" href="https://github.com/bendrice" aria-label="GitHub" class="hover:text-orange-500 transition-colors"><i class="fab fa-github"></i></a>
             <a target="_blank" href="https://www.linkedin.com/in/benjamind-rice/" aria-label="LinkedIn" class="hover:text-orange-500 transition-colors"><i class="fa-brands fa-linkedin"></i></a>
