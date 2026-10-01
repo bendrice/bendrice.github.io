@@ -17,20 +17,21 @@
 
     <!-- navbar -->
     <header>
-        <div class="flex justify-between items-center px-6 sm:px-10 md:px-14 mt-8 md:mt-10">
-            <a href="/index.html" class="font-KronaOne text-[36px] md:text-[42px] leading-none transition-colors hover:text-orange-500">bR</a>
+        <div class="grid grid-cols-[1fr_auto_1fr] items-center px-6 sm:px-10 md:px-14 mt-8 md:mt-10">
+            <a href="/index.html" class="font-KronaOne text-[36px] md:text-[42px] leading-none transition-colors hover:text-orange-500 justify-self-start">bR</a>
 
-            <button id="nav-toggle" aria-expanded="false" aria-controls="nav-menu" class="md:hidden text-black text-2xl leading-none p-2 -m-2">
-                <i class="fa-solid fa-bars"></i>
-            </button>
-
-            <ul id="nav-menu" class="hidden md:flex md:items-center gap-1 md:gap-2 font-KronaOne text-sm absolute md:static right-6 mt-4 md:mt-0 bg-white md:bg-transparent border md:border-0 border-gray-200 rounded-lg shadow-lg md:shadow-none p-4 md:p-0 flex-col md:flex-row z-10">
-                <li><a data-nav-link href="/projects/" class="block text-gray-400 hover:text-orange-500 transition-colors px-3 py-2">Projects</a></li>
-                <li><a data-nav-link href="/blog/" class="block text-gray-400 hover:text-orange-500 transition-colors px-3 py-2">Blog</a></li>
-                <li><a data-nav-link href="/knowledge/" class="block text-gray-400 hover:text-orange-500 transition-colors px-3 py-2">Books</a></li>
-                <li><a data-nav-link href="/cool/" class="block text-gray-400 hover:text-orange-500 transition-colors px-3 py-2">Links</a></li>
-                <li><a data-nav-link href="/resume/" class="block text-gray-400 hover:text-orange-500 transition-colors px-3 py-2">Resume</a></li>
-            </ul>
+            <nav aria-label="Explore" class="justify-self-center flex items-center justify-center flex-wrap gap-x-4 gap-y-2 text-[11px] font-semibold uppercase tracking-[0.22em] text-center">
+                <a href="/projects/" class="hover:text-orange-500 transition-colors">Things I'm tinkering with</a>
+                <span class="text-gray-300" aria-hidden="true">/</span>
+                <a href="/blog/" class="hover:text-orange-500 transition-colors">Writing to myself</a>
+                <span class="text-gray-300" aria-hidden="true">/</span>
+                <a href="/knowledge/" class="hover:text-orange-500 transition-colors">Knowledge for all</a>
+                <span class="text-gray-300" aria-hidden="true">/</span>
+                <a href="/cool/" class="hover:text-orange-500 transition-colors">Things I find cool</a>
+                <span class="text-gray-300" aria-hidden="true">/</span>
+                <a href="/resume/" class="hover:text-orange-500 transition-colors">Resume</a>
+            </nav>
+            <div></div>
         </div>
     </header>
 
@@ -88,7 +89,7 @@
                     <div data-mag-img class="absolute inset-y-0 left-0 my-auto w-[min(85vw,74vh)] sm:w-[min(55vw,76vh)] md:w-[min(50vw,78vh)] max-w-3xl max-h-full aspect-[8.5/11] rounded-lg overflow-hidden border border-gray-200 shadow-2xl bg-white will-change-transform">
                         <img src="photos/explore..jpg" alt="Newspaper cover — Explore" class="w-full h-full object-cover object-top">
                     </div>
-                    <div data-mag-img class="absolute inset-y-0 left-0 my-auto w-[min(85vw,74vh)] sm:w-[min(55vw,76vh)] md:w-[min(50vw,78vh)] max-w-3xl max-h-full aspect-[8.5/11] rounded-lg overflow-hidden border border-gray-200 shadow-2xl bg-white will-change-transform">
+                    <div data-mag-img class="absolute inset-y-0 left-0 my-auto w-[min(85vw,74vh)] sm:w-[min(50vw,78vh)] max-w-3xl max-h-full aspect-[8.5/11] rounded-lg overflow-hidden border border-gray-200 shadow-2xl bg-white will-change-transform">
                         <img src="photos/Technology.jpg" alt="Newspaper cover — Technology" class="w-full h-full object-cover object-top">
                     </div>
                 </div>
