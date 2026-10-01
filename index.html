@@ -1,91 +1,54 @@
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ben Rice</title>
-    <link rel="stylesheet" href="/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Krona+One&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="shortcut icon" href="/favicon.ico">
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ben Rice</title>
+<link rel="stylesheet" href="/style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Krona+One&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<style>:root{--ink:#1a1a1a;--ink-soft:#4b5563;--ink-faint:#9ca3af;--orange:#f97316;--rule:#f3f4f6}html,body{margin:0;padding:0}body.home{background:#fff;color:var(--ink);font-family:'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;min-height:100vh;display:flex;flex-direction:column;-webkit-font-smoothing:antialiased}.site-header{padding:2rem 2.5rem 0}.site-header .logo{font-family:'Krona One',sans-serif;font-size:2.25rem;line-height:1;color:var(--ink);text-decoration:none;transition:color .25s ease}.site-header .logo:hover{color:var(--orange)}.hero{flex:1;width:100%;max-width:76rem;margin:0 auto;padding:3.5rem 2.5rem 4rem;display:grid;grid-template-columns:3fr 2fr;gap:4.5rem;align-items:start}.eyebrow{font-family:'Krona One',sans-serif;color:var(--orange);font-size:.8rem;letter-spacing:.3em;text-transform:uppercase;margin:0 0 1.25rem}.headline{font-family:'Krona One',sans-serif;font-size:clamp(3rem,7.5vw,6rem);line-height:.98;margin:0;font-weight:400}.blink-dot{color:var(--orange);animation:home-blink 1.2s steps(2,start) infinite}@keyframes home-blink{to{visibility:hidden}}.location{margin:1.5rem 0 0;font-size:.95rem;letter-spacing:.02em;color:var(--ink-faint)}.intro{margin-top:3rem;display:grid;grid-template-columns:minmax(0,230px) 1fr;gap:2.5rem;align-items:start}.photo-wrap{position:relative;margin:0}.photo-portrait{display:block;width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:14px;box-shadow:0 24px 48px -24px rgba(0,0,0,.25)}.photo-accent{position:absolute;width:46%;right:-14px;bottom:-18px;border:6px solid #fff;border-radius:10px;box-shadow:0 18px 36px -18px rgba(0,0,0,.35);transform:rotate(4deg)}.bio{margin:0}.bio p{margin:0 0 1.5rem;font-size:1.06rem;line-height:1.8;color:var(--ink-soft)}.bio p:last-child{margin-bottom:0}.stack-nav{display:flex;flex-direction:column;gap:2rem;padding-top:7rem}.stack-nav a{display:inline-block;font-size:1.65rem;font-weight:600;letter-spacing:-.01em;color:var(--ink);text-decoration:none;padding-left:1.25rem;border-left:2px solid var(--rule);transition:color .25s ease,border-color .25s ease,transform .25s ease}.stack-nav a:hover{color:var(--orange);border-left-color:var(--orange);transform:translateX(6px)}.site-footer{padding:1.5rem 2.5rem;border-top:1px solid var(--rule);display:flex;flex-direction:row;justify-content:space-between;align-items:center;gap:.75rem;font-size:.75rem;color:var(--ink-faint);font-family:'Krona One',sans-serif}.site-footer p{margin:0}.site-footer .icons{display:flex;align-items:center;gap:1rem;font-size:1rem}.site-footer .icons a{color:var(--ink-faint);transition:color .25s ease}.site-footer .icons a:hover{color:var(--orange)}@media(max-width:60rem){.hero{grid-template-columns:1fr;gap:3.5rem;padding:3rem 1.75rem 3.5rem}.site-header{padding:1.75rem 1.75rem 0}.stack-nav{padding-top:0;gap:1.5rem}.stack-nav a{font-size:1.4rem}}@media(max-width:40rem){.intro{grid-template-columns:1fr}.photo-wrap{max-width:20rem}.site-footer{flex-direction:column}}</style>
 </head>
-<body class="overflow-x-hidden min-h-screen flex flex-col">
-
-    <!-- navbar -->
-    <header>
-        <div class="px-6 sm:px-10 md:px-14 mt-8 md:mt-10">
-            <a href="/index.html" class="font-KronaOne text-[36px] md:text-[42px] leading-none transition-colors hover:text-orange-500">bR</a>
-        </div>
-    </header>
-
-    <main class="flex-1 flex flex-col">
-        <!-- hero -->
-        <section class="min-w-0 max-w-7xl mx-auto px-6 sm:px-16 md:px-32 pt-16 md:pt-20 pb-12 md:pb-16">
-            <div class="text-center">
-                <p class="reveal font-KronaOne text-orange-500 text-xs md:text-sm tracking-[0.3em] uppercase mb-5">Hi, I'm</p>
-                <h1 class="reveal font-KronaOne text-[clamp(2.75rem,11vw,9rem)] leading-[0.95]">Ben Rice<span class="text-orange-500 animate-blink">.</span></h1>
-            </div>
-        </section>
-
-        <!-- nav / explore -->
-        <section class="relative min-w-0 flex-1 min-h-[320px] flex items-center justify-center overflow-hidden px-6 py-10">
-            <img src="/public/frontpagept2.png" alt="" class="absolute inset-y-0 left-2 right-2 sm:left-3 sm:right-3 md:left-4 md:right-4 h-full w-[calc(100%-1rem)] sm:w-[calc(100%-1.5rem)] md:w-[calc(100%-2rem)] object-cover object-[center_70%]" />
-            <div class="relative w-full max-w-md sm:max-w-lg bg-black/35 backdrop-blur-lg border border-white/15 rounded-3xl shadow-2xl px-8 py-8 sm:px-12 sm:py-10 text-center">
-                <p class="reveal text-white/80 text-xs sm:text-sm italic leading-relaxed mb-3">From the golden coast of California, to the rocky mountains of Colorado, to the city of Boston, back to the city of Angels.</p>
-                <p class="reveal text-white/90 text-xs sm:text-sm leading-relaxed mb-6">I am currently a Consultant at Resolution Economics, helping companies operate more efficiently and more compliantly for their employees.</p>
-                <p class="reveal text-white/90 text-xs sm:text-sm leading-relaxed mb-6">Previously, I was a Private Equity Analyst at BCG, a Consultant at Topline, and worked in Product at the startup NeuroFieldz.</p>
-                <p class="reveal text-white/90 text-xs sm:text-sm leading-relaxed">I grew up playing soccer for the LA Galaxy youth development team, and refurbished and sold computer parts and computers in high school. I'm now fighting my way into tech. Outside of work, I enjoy lifting, taking photos of architecture, backpacking, and playing poker.</p>
-
-                <ul class="border-t border-white/20 mt-6 pt-6">
-                    <li class="reveal">
-                        <a href="/projects/" class="group block py-1 leading-tight">
-                            <span class="font-normal text-white text-xs md:text-sm group-hover:text-orange-400 transition-colors">Things I'm tinkering with</span>
-                        </a>
-                    </li>
-                    <li class="reveal [transition-delay:60ms]">
-                        <a href="/blog/" class="group block py-1 leading-tight">
-                            <span class="font-normal text-white text-xs md:text-sm group-hover:text-orange-400 transition-colors">Writing to myself</span>
-                        </a>
-                    </li>
-                    <li class="reveal [transition-delay:120ms]">
-                        <a href="/knowledge/" class="group block py-1 leading-tight">
-                            <span class="font-normal text-white text-xs md:text-sm group-hover:text-orange-400 transition-colors">Knowledge for all</span>
-                        </a>
-                    </li>
-                    <li class="reveal [transition-delay:180ms]">
-                        <a href="/cool/" class="group block py-1 leading-tight">
-                            <span class="font-normal text-white text-xs md:text-sm group-hover:text-orange-400 transition-colors">Things I find cool</span>
-                        </a>
-                    </li>
-                    <li class="reveal [transition-delay:240ms]">
-                        <a href="/resume/" class="group block py-1 leading-tight">
-                            <span class="font-normal text-white text-xs md:text-sm group-hover:text-orange-400 transition-colors">Resume</span>
-                        </a>
-                    </li>
-                    <li class="reveal [transition-delay:300ms]">
-                        <a href="/about/" class="group block py-1 leading-tight">
-                            <span class="font-normal text-white text-xs md:text-sm group-hover:text-orange-400 transition-colors">About</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </section>
-    </main>
-
-    <footer class="px-6 sm:px-10 md:px-14 py-6 border-t border-gray-200 flex flex-col md:flex-row justify-between items-center gap-3 text-xs text-gray-400 font-KronaOne">
-        <p>bR 2026 - All rights reserved</p>
-        <div class="flex items-center gap-4 text-base">
-            <a target="_blank" href="https://github.com/bendrice" aria-label="GitHub" class="hover:text-orange-500 transition-colors"><i class="fab fa-github"></i></a>
-            <a target="_blank" href="https://www.linkedin.com/in/benjamind-rice/" aria-label="LinkedIn" class="hover:text-orange-500 transition-colors"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="/resume/" aria-label="Resume" class="hover:text-orange-500 transition-colors"><i class="fa-solid fa-file"></i></a>
-            <a href="mailto:rice.be@northeastern.edu" aria-label="Email" class="hover:text-orange-500 transition-colors"><i class="fa-solid fa-envelope"></i></a>
-        </div>
-    </footer>
-
-    <script src="/js/main.js"></script>
+<body class="home">
+<header class="site-header"><a href="/index.html" class="logo">bR</a></header>
+<main class="hero">
+<div class="hero-left">
+<p class="eyebrow">Hi, I'm</p>
+<h1 class="headline">Ben Rice<span class="blink-dot">.</span></h1>
+<p class="location">Los Angeles, CA &mdash; Data Science &amp; Marketing, Northeastern University</p>
+<div class="intro">
+<figure class="photo-wrap">
+<img class="photo-portrait" src="/about/photos/Strictly%20Business.jpg" alt="Ben Rice">
+<img class="photo-accent" src="/about/photos/Technology.jpg" alt="Photography by Ben Rice">
+</figure>
+<div class="bio">
+<p>I'm a Consultant at Resolution Economics. I studied Data Science &amp; Business at Northeastern University with a concentration in Marketing Management.</p>
+<p>I LOVE architecture, jazz, EDM, computer hardware, chess, poker, learning about nearly anything, meeting new people, and especially notion (I recently had a website but found myself over engineering, which was fun, but I feel notion is the best place to consolidate everything!)</p>
+</div>
+</div>
+</div>
+<nav class="stack-nav" aria-label="Explore">
+<a href="/projects/">Things I'm tinkering with</a>
+<a href="/blog/">Writing to myself</a>
+<a href="/knowledge/">Knowledge for all</a>
+<a href="/cool/">Things I find cool</a>
+<a href="/resume/">Resume</a>
+</nav>
+</main>
+<footer class="site-footer">
+<p>bR 2026 - All rights reserved</p>
+<div class="icons">
+<a target="_blank" href="https://github.com/bendrice" aria-label="GitHub"><i class="fab fa-github"></i></a>
+<a target="_blank" href="https://www.linkedin.com/in/benjamind-rice/" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+<a href="/resume/" aria-label="Resume"><i class="fa-solid fa-file"></i></a>
+<a href="mailto:rice.be@northeastern.edu" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+</div>
+</footer>
+<script src="/js/main.js"></script>
 </body>
 </html>
